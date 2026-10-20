@@ -13,15 +13,15 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 
+const NAV_ITEMS = [
+    { label: "Product", href: "#interview-showcase" },
+    { label: "Features", href: "#features" },
+    { label: "Pricing", href: "#pricing" },
+    { label: "Resources", href: "#testimonials" },
+];
+
 function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-    const navItems = [
-        { label: "Product", href: "#interview-showcase" },
-        { label: "Features", href: "#features" },
-        { label: "Pricing", href: "#pricing" },
-        { label: "Resources", href: "#testimonials" },
-    ];
 
     const closeMobileMenu = () => {
         setMobileMenuOpen(false);
@@ -59,7 +59,7 @@ function Navbar() {
                             display: { xs: "none", md: "flex" },
                         }}
                     >
-                        {navItems.map((item) => (
+                        {NAV_ITEMS.map((item) => (
                             <Button
                                 key={item.label}
                                 component="a"
@@ -138,7 +138,7 @@ function Navbar() {
                             pb: 2,
                         }}
                     >
-                        {navItems.map((item) => (
+                        {NAV_ITEMS.map((item) => (
                             <Button
                                 key={item.label}
                                 component="a"

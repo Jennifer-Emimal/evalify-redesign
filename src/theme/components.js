@@ -1,5 +1,4 @@
 const components = {
-   
     MuiButton: {
         defaultProps: {
             disableElevation: true,
@@ -61,20 +60,20 @@ const components = {
 
             // Shared secondary button
             {
-    props: { variant: "outlined" },
-    style: ({ theme }) => ({
-        backgroundColor: "#FFFFFF",
-        color: theme.palette.text.primary,
-        borderColor: "transparent",
-        boxShadow: "none",
+                props: { variant: "outlined" },
+                style: ({ theme }) => ({
+                    backgroundColor: "#FFFFFF",
+                    color: theme.palette.text.primary,
+                    borderColor: "transparent",
+                    boxShadow: "none",
 
-        "&:hover": {
-            backgroundColor: "#FFFFFF",
-            borderColor: "transparent",
-            boxShadow: "none",
-        },
-    }),
-},
+                    "&:hover": {
+                        backgroundColor: "#FFFFFF",
+                        borderColor: "transparent",
+                        boxShadow: "none",
+                    },
+                }),
+            },
         ],
     },
 
