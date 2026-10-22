@@ -30,7 +30,7 @@ function SectionLabel({ children, align = "center" }) {
         <Typography
           sx={{
             color: "secondary.dark",
-            fontSize: "0.7rem",
+            fontSize: "0.76rem",
             fontWeight: 800,
             letterSpacing: "0.15em",
             textTransform: "uppercase",

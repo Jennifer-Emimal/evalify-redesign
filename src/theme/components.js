@@ -1,4 +1,27 @@
 const components = {
+    MuiContainer: {
+        styleOverrides: {
+            root: ({ theme }) => ({
+                // Reduce horizontal padding on large screens so content
+                // fills more of the available viewport width.
+                [theme.breakpoints.up("lg")]: {
+                    paddingLeft: "40px",
+                    paddingRight: "40px",
+                },
+                [theme.breakpoints.up("xl")]: {
+                    paddingLeft: "48px",
+                    paddingRight: "48px",
+                },
+            }),
+            // Extend the lg max-width to align with the wider lg breakpoint
+            maxWidthLg: ({ theme }) => ({
+                [theme.breakpoints.up("lg")]: {
+                    maxWidth: "1400px",
+                },
+            }),
+        },
+    },
+
     MuiButton: {
         defaultProps: {
             disableElevation: true,
@@ -10,7 +33,9 @@ const components = {
                 padding: "9px 16px",
                 minHeight: 38,
                 fontFamily: '"Inter", sans-serif',
-                fontSize: "0.75rem",
+                // Raised from 0.75rem — keeps buttons readable without
+                // breaking the compact visual design.
+                fontSize: "0.9rem",
                 fontWeight: 700,
                 lineHeight: 1.5,
                 textTransform: "none",
@@ -24,7 +49,7 @@ const components = {
                 props: { variant: "nav" },
                 style: {
                     color: "text.primary",
-                    fontSize: "0.76rem",
+                    fontSize: "0.9rem",
                     fontWeight: 600,
                     minWidth: "auto",
                     minHeight: "auto",

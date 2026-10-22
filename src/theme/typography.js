@@ -4,7 +4,7 @@ const typography = {
 
   h1: {
     fontFamily: '"Inter", sans-serif',
-    fontSize: "3.5rem",
+    fontSize: "3.55rem",
     fontWeight: 700,
     lineHeight: 1.1,
     letterSpacing: "-0.035em",
@@ -12,7 +12,7 @@ const typography = {
 
   h2: {
     fontFamily: '"Inter", sans-serif',
-    fontSize: "2.5rem",
+    fontSize: "2.55rem",
     fontWeight: 700,
     lineHeight: 1.2,
     letterSpacing: "-0.025em",
@@ -20,20 +20,20 @@ const typography = {
 
   h3: {
     fontFamily: '"Inter", sans-serif',
-    fontSize: "1.25rem",
+    fontSize: "1.3rem",
     fontWeight: 600,
     lineHeight: 1.3,
     letterSpacing: "-0.02em",
   },
 
   body1: {
-    fontSize: "1rem",
+    fontSize: "1.05rem",
     fontWeight: 400,
     lineHeight: 1.6,
   },
 
   body2: {
-    fontSize: "0.875rem",
+    fontSize: "0.9rem",
     fontWeight: 400,
     lineHeight: 1.6,
   },

@@ -14,7 +14,6 @@ const STATS = [
 ];
 
 function HeroSection() {
-
     return (
         <Box
             component="section"
@@ -23,7 +22,6 @@ function HeroSection() {
                 overflow: "hidden",
                 py: { xs: 5, md: 7 },
             }}
-            
         >
             <Container maxWidth="lg">
                 <Box
@@ -31,10 +29,11 @@ function HeroSection() {
                         display: "grid",
                         gridTemplateColumns: {
                             xs: "1fr",
-                            md: "0.9fr 1.1fr",
+                            md: "1fr 1.2fr",
+                            lg: "1fr 1.35fr",
                         },
                         alignItems: "center",
-                        gap: { xs: 3, md: 1 },
+                        gap: { xs: 3, md: 2, lg: 3 },
                         pt: 0,
                         pb: 0,
                     }}
@@ -59,8 +58,13 @@ function HeroSection() {
                         >
                             <CheckCircleIcon
                                 sx={{
-                                    fontSize: 13,
+                                    fontSize: 12,
                                     color: "secondary.main",
+                                    display: "block",
+                                    flexShrink: 0,
+                                    alignSelf: "center",
+                                    transform: "none",
+                                    m: 0,
                                 }}
                             />
 
@@ -68,7 +72,7 @@ function HeroSection() {
                                 variant="body2"
                                 sx={{
                                     color: "text.secondary",
-                                    fontSize: "0.68rem",
+                                    fontSize: "0.76rem",
                                     fontWeight: 600,
                                 }}
                             >
@@ -82,11 +86,11 @@ function HeroSection() {
                             sx={{
                                 color: "text.primary",
                                 fontSize: {
-                                    xs: "2.6rem",
-                                    sm: "3.2rem",
-                                    lg: "3.8rem",
+                                    xs: "2.7rem",
+                                    sm: "3.3rem",
+                                    lg: "3.9rem",
                                 },
-                                maxWidth: 520,
+                                maxWidth: { xs: 520, lg: 560 },
                             }}
                         >
                             Interview Less.
@@ -99,9 +103,9 @@ function HeroSection() {
                             variant="body1"
                             sx={{
                                 color: "text.secondary",
-                                fontSize: "0.9rem",
+                                fontSize: "0.95rem",
                                 lineHeight: 1.7,
-                                maxWidth: 450,
+                                maxWidth: { xs: 450, lg: 500 },
                                 mt: 2,
                             }}
                         >
@@ -140,8 +144,8 @@ function HeroSection() {
                                         sx={{
                                             color: "text.primary",
                                             fontSize: {
-                                                xs: "1.35rem",
-                                                sm: "1.6rem",
+                                                xs: "1.4rem",
+                                                sm: "1.65rem",
                                             },
                                             whiteSpace: "nowrap",
                                         }}
@@ -153,7 +157,7 @@ function HeroSection() {
                                         variant="body2"
                                         sx={{
                                             color: "text.secondary",
-                                            fontSize: "0.65rem",
+                                            fontSize: "0.75rem",
                                             mt: 0.4,
                                             lineHeight: 1.5,
                                         }}
@@ -180,7 +184,7 @@ function HeroSection() {
                             src={heroDashboard}
                             alt="Evalify AI interview dashboard with video interviews and candidate analytics"
                             className="dashboard-image"
-                            sx={{ maxWidth: 680 }}
+                            sx={{ maxWidth: { xs: 680, lg: 760 } }}
                         />
                     </Box>
                 </Box>

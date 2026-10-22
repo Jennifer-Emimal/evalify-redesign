@@ -27,21 +27,19 @@ function TrustedCompaniesSection() {
         <Box
             component="section"
             aria-label="Trusted companies"
-            
             sx={{
-    background: (theme) => theme.gradients.hero,
-    borderTop: 1,
-    borderBottom: 1,
-    borderColor: "divider",
-    py: { xs: 5, md: 7 },
-}}
+                background: (theme) => theme.gradients.hero,
+                borderTop: 1,
+                borderBottom: 1,
+                borderColor: "divider",
+                py: { xs: 5, md: 7 },
+            }}
         >
             <Container maxWidth="lg">
                 {/* Section heading */}
                <SectionLabel>Trusted by growing teams </SectionLabel>
 
                 {/* Company logos */}
-                
 <Box
     sx={{
         display: "grid",
@@ -53,10 +51,8 @@ function TrustedCompaniesSection() {
         justifyItems: "center",
         alignItems: "center",
         width: "100%",
-        maxWidth: 1200,
-        mx: "auto",
         mt: { xs: 2, md: 4 },
-        columnGap: 4,
+        columnGap: { xs: 3, sm: 5, md: 4 },
         rowGap: 2,
     }}
 >

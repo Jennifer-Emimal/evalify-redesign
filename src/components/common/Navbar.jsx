@@ -81,10 +81,10 @@ function Navbar() {
                             flexShrink: 0,
                         }}
                     >
+                        {/* fontSize inherits 0.8rem from theme Button root */}
                         <Button
                             sx={{
                                 color: "text.secondary",
-                                fontSize: "0.76rem",
                                 minWidth: "auto",
                                 "&:hover": {
                                     color: "text.primary",
@@ -147,7 +147,7 @@ function Navbar() {
                                 sx={{
                                     justifyContent: "space-between",
                                     color: "text.primary",
-                                    fontSize: "0.85rem",
+                                    fontSize: "0.9rem",
                                 }}
                             >
                                 {item.label}

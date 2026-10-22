@@ -34,6 +34,7 @@ function InterviewShowcaseSection() {
                         gridTemplateColumns: {
                             xs: "1fr",
                             md: "0.8fr 1.2fr",
+                            lg: "0.75fr 1.25fr",
                         },
                         alignItems: "center",
                         gap: { xs: 4, md: 3 },
@@ -57,8 +58,8 @@ function InterviewShowcaseSection() {
                             sx={{
                                 color: "text.primary",
                                 fontSize: {
-                                    xs: "2.4rem",
-                                    md: "3rem",
+                                    xs: "2.5rem",
+                                    md: "3.1rem",
                                 },
                             }}
                         >
@@ -73,7 +74,7 @@ function InterviewShowcaseSection() {
                             variant="body1"
                             sx={{
                                 color: "text.secondary",
-                                fontSize: "0.95rem",
+                                fontSize: "1rem",
                                 mt: 2,
                             }}
                         >
@@ -104,7 +105,7 @@ function InterviewShowcaseSection() {
                                         variant="body2"
                                         sx={{
                                             color: "text.secondary",
-                                            fontSize: "0.82rem",
+                                            fontSize: "0.87rem",
                                         }}
                                     >
                                         {benefit}
@@ -138,7 +139,7 @@ function InterviewShowcaseSection() {
                             src={interviewDashboard}
                             alt="AI video interview with speech analysis and candidate scorecards"
                             className="dashboard-image"
-                            sx={{ maxWidth: 760 }}
+                            sx={{ maxWidth: { xs: 760, lg: 860 } }}
                         />
                     </Box>
                 </Box>

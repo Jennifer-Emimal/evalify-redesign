@@ -91,7 +91,7 @@ function FeaturesSection() {
             variant="h2"
             sx={{
               color: "text.primary",
-              fontSize: { xs: "2rem", md: "2.65rem" },
+              fontSize: { xs: "2.1rem", md: "2.75rem" },
             }}
           >
             Built for modern hiring{" "}
@@ -102,7 +102,7 @@ function FeaturesSection() {
             variant="body1"
             sx={{
               color: "text.secondary",
-              fontSize: "0.9rem",
+              fontSize: "0.95rem",
               maxWidth: 600,
               mt: 1.5,
             }}
@@ -160,7 +160,7 @@ function FeaturesSection() {
                   variant="h3"
                   sx={{
                     color: "text.primary",
-                    fontSize: "1rem",
+                    fontSize: "1.05rem",
                   }}
                 >
                   {title}
@@ -171,7 +171,7 @@ function FeaturesSection() {
                   variant="body2"
                   sx={{
                     color: "text.secondary",
-                    fontSize: "0.8rem",
+                    fontSize: "0.85rem",
                     mt: 0.6,
                     maxWidth: 300,
                   }}

@@ -90,9 +90,9 @@ function FAQSection() {
                                 sx={{
                                     color: "text.primary",
                                     fontSize: {
-                                        xs: "2rem",
-                                        sm: "2.4rem",
-                                        md: "2.65rem",
+                                        xs: "2.1rem",
+                                        sm: "2.5rem",
+                                        md: "2.75rem",
                                     },
                                     lineHeight: 1.18,
                                     maxWidth: 480,
@@ -171,6 +171,7 @@ function FAQSection() {
                             borderTop: 1,
                             borderColor: "divider",
                             minWidth: 0,
+                            fontFamily: (theme) => theme.typography.fontFamily,
                         }}
                     >
                         {faqs.map((faq, index) => {
@@ -231,6 +232,8 @@ function FAQSection() {
                                             variant="body2"
                                             sx={{
                                                 color: "text.secondary",
+                                                fontFamily: (theme) =>
+                                                    theme.typography.fontFamily,
                                                 pb: 2.5,
                                                 pr: { xs: 1, md: 4 },
                                                 lineHeight: 1.8,

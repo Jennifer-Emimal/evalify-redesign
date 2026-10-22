@@ -43,6 +43,7 @@ function CTASection() {
                         gridTemplateColumns: {
                             xs: "1fr",
                             md: "0.95fr 1.05fr",
+                            lg: "0.9fr 1.1fr",
                         },
                         alignItems: "center",
                         gap: { xs: 4, md: 2 },
@@ -53,7 +54,6 @@ function CTASection() {
                         sx={{
                             position: "relative",
                             zIndex: 1,
-                            pl: { xs: 0, md: 2 },
                         }}
                     >
                         {/* Trust badge */}
@@ -81,7 +81,7 @@ function CTASection() {
 
                             <Typography
                                 sx={{
-                                    fontSize: "0.8rem",
+                                    fontSize: "0.85rem",
                                     fontWeight: 700,
                                 }}
                             >
@@ -96,9 +96,9 @@ function CTASection() {
                             sx={{
                                 color: "text.primary",
                                 fontSize: {
-                                    xs: "2rem",
-                                    sm: "2.4rem",
-                                    md: "2.65rem",
+                                    xs: "2.1rem",
+                                    sm: "2.5rem",
+                                    md: "2.75rem",
                                 },
                                 lineHeight: 1.18,
                                 maxWidth: 480,
@@ -115,7 +115,7 @@ function CTASection() {
                                 mt: 2,
                                 maxWidth: 550,
                                 color: "text.secondary",
-                                fontSize: { xs: "0.95rem", md: "1.05rem" },
+                                fontSize: { xs: "1rem", md: "1.1rem" },
                                 lineHeight: 1.7,
                             }}
                         >
@@ -168,7 +168,7 @@ function CTASection() {
 
                                     <Typography
                                         sx={{
-                                            fontSize: "0.8rem",
+                                            fontSize: "0.85rem",
                                             whiteSpace: "nowrap",
                                         }}
                                     >
@@ -195,7 +195,7 @@ function CTASection() {
                             src={ctaDashboard}
                             alt="Evalify hiring dashboard illustration"
                             className="dashboard-image"
-                            sx={{ maxWidth: 800 }}
+                            sx={{ maxWidth: { xs: 800, lg: 900 } }}
                         />
                     </Box>
                 </Box>

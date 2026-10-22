@@ -142,7 +142,7 @@ function PricingSection() {
                                 px: 2.5,
                                 py: 0.8,
                                 borderRadius: "24px",
-                                fontSize: "0.7rem",
+                                fontSize: "0.9rem",
                                 whiteSpace: "nowrap",
                                 color: yearly
                                     ? "text.secondary"
@@ -166,7 +166,7 @@ function PricingSection() {
                                 px: 2,
                                 py: 0.8,
                                 borderRadius: "24px",
-                                fontSize: "0.7rem",
+                                fontSize: "0.9rem",
                                 whiteSpace: "nowrap",
                                 color: yearly
                                     ? "text.primary"
@@ -244,7 +244,7 @@ alignItems: "stretch",
                                         px: 1.8,
                                         py: 0.5,
                                         borderRadius: "20px",
-                                        fontSize: "0.62rem",
+                                        fontSize: "0.73rem",
                                         fontWeight: 700,
                                         whiteSpace: "nowrap",
                                     }}
@@ -259,7 +259,7 @@ alignItems: "stretch",
                                 variant="h3"
                                 sx={{
                                     color: "text.primary",
-                                    fontSize: "1rem",
+                                    fontSize: "1.05rem",
                                 }}
                             >
                                 {plan.name}
@@ -270,7 +270,7 @@ alignItems: "stretch",
                                 variant="body2"
                                 sx={{
                                     color: "text.secondary",
-                                    fontSize: "0.75rem",
+                                    fontSize: "0.8rem",
                                     mt: 0.6,
                                 }}
                             >
@@ -289,8 +289,8 @@ alignItems: "stretch",
                                     sx={{
                                         color: "text.primary",
                                         fontSize: {
-                                            xs: "2rem",
-                                            md: "2.3rem",
+                                            xs: "2.1rem",
+                                            md: "2.4rem",
                                         },
                                     }}
                                 >
@@ -301,7 +301,7 @@ alignItems: "stretch",
                                     variant="body2"
                                     sx={{
                                         color: "text.disabled",
-                                        fontSize: "0.7rem",
+                                        fontSize: "0.8rem",
                                     }}
                                 >
                                     /month
@@ -329,7 +329,7 @@ alignItems: "stretch",
                                             variant="body2"
                                             sx={{
                                                 color: "text.secondary",
-                                                fontSize: "0.75rem",
+                                                fontSize: "0.8rem",
                                                 lineHeight: 1.4,
                                             }}
                                         >
@@ -352,7 +352,7 @@ alignItems: "stretch",
                                     mt: "auto",
                                     py: 1,
                                     borderRadius: "9px",
-                                    fontSize: "0.72rem",
+                                    fontSize: "0.9rem",
                                     color: plan.popular
                                         ? "primary.contrastText"
                                         : "text.primary",

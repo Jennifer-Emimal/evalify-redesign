@@ -64,8 +64,8 @@ function TestimonialsSection() {
                         sx={{
                             color: "text.primary",
                             fontSize: {
-                                xs: "2rem",
-                                md: "2.6rem",
+                                xs: "2.1rem",
+                                md: "2.7rem",
                             },
                             width: "100%",
                             textAlign: "center",
@@ -176,7 +176,7 @@ function TestimonialsSection() {
                                         variant="body2"
                                         sx={{
                                             color: "text.secondary",
-                                            fontSize: "0.72rem",
+                                            fontSize: "0.77rem",
                                             mt: 0.3,
                                         }}
                                     >

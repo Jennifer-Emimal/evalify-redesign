@@ -84,7 +84,7 @@ function FooterSection() {
               variant="body2"
               sx={{
                 color: "text.secondary",
-                fontSize: "0.75rem",
+                fontSize: "0.8rem",
                 maxWidth: 200,
               }}
             >
@@ -129,7 +129,7 @@ function FooterSection() {
                 variant="h3"
                 sx={{
                   color: "text.primary",
-                  fontSize: "0.8rem",
+                  fontSize: "0.85rem",
                   mb: 1.5,
                 }}
               >
@@ -146,7 +146,7 @@ function FooterSection() {
                     className="footer-link"
                     sx={{
                       color: "text.secondary",
-                      fontSize: "0.75rem",
+                      fontSize: "0.8rem",
                       "&:hover": {
                         color: "primary.main",
                       },
